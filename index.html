@@ -68,6 +68,50 @@ So summing up the workflow,
 3. then we will make our changes
 4. we will then add, commit and push it to the github
 
+
 # we will now see the branches in the github
 they are created so that each developer can individually work on a specific task of the project
 and then the commits can be merged after completion 
+to check the branch we are on, type git branch and press enter. it shows the branch name
+to change the branch name, we type git branch -M main (here main is the name of the branch)
+
+to go from one branch to another, we type git checkout <-branch name->
+it is used to navigate
+
+to create new branch, we type git checkout -b <-new branch name->
+we created a new branch called feature1 by typing git checkout -b feature1
+
+now to go to main branch from feature1 ,we write git checkout main
+
+to delete a particular branch, we type git branch -d <-branch name->
+so here, to delete feature2, i type git branch -d feature2
+note that if we are currenlty on one branch and we want to delete that branch only
+then we cannot delete that, it will throw an error
+so first we have to change that branch and then delete it
+
+now if we modify any file, then that changes will be for feature1
+so it show, modified status for fetaure1 branch
+now if we switch to main branch, it will show that the files are up to date
+now for pushing it to gthuc, since we did changes in feature1 branch, so we will type git push origin feature1
+
+now on the github, to merge the code and files of the main and feature1 branch
+there are two ways to merge them, one can eb done on terminal nad the other can be done on website
+
+to do on terminal:
+we type git diff main provided we are currently on the feature1 branch
+then it will show what all changes feature1 branch has done on file
+then we will type git merge main and press enter
+
+the second way is to do using github:
+we create a pull request(PR)
+it lets you tell others that you have pushed to a branch in repo on github.
+we can review the request, preview it and if okay, we cna merge it
+
+now we saw the the changes done at the remote are not seen on local
+so we now use pull command 
+it is used to fetch and download the content from remote repo
+and it immediately update the local repo to match that content. 
+so we type git pull origin main and press enter
+now all the changes will be visible 
+
+okay so lets start with merge conflict now
