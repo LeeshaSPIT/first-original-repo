@@ -1,0 +1,37 @@
+there are two places: a)remote and b) local
+local means our laptop or computer
+remote menas the folder on github
+
+clone command is used to clone a repo on our machine
+for cloning that is copying from github to our laptop
+so first in the repo, we will click the green button where code is written
+then click https as then copy the link
+then in vs code type git clone and then paste the link and then press enter
+
+now in vs code, to go inside the folder we type in the terminal cd and then file name
+actually we can just type the first two three letters of the folder and then click tab to auto type it
+then press enter
+cd stands for change directory means going from bigger folder to smaller folder.
+here it is form GITDEMO to first-original-repo
+
+we can type ls that stands for list files to get the list of all files present in it
+to see the hidden files, in windows, we type ls -h
+for mac, we type ls -a 
+
+to check the status of the files, we type git status
+
+types:
+1. untracked: new files that git doesn't yet track
+2. modified: change files
+3. staged: file is ready to be committed
+4. unmodified: unchanged
+
+type git add and then file name and press enter
+it adds new or changed files in your working directory to the git staging area
+we can type git add . to add all the files 
+
+type git commit -m "message"
+it is the record of change
+
+type git push origin main
+it pushes(uploads) the local repo content to remote repo so that files and changes are visible on github
