@@ -35,3 +35,29 @@ it is the record of change
 
 type git push origin main
 it pushes(uploads) the local repo content to remote repo so that files and changes are visible on github
+
+init command is used to create a new git repo
+to come out of the directory, we type cd ..
+so now we come out of the first-original-repo that is we are now at GITDEMO
+now to create a new directory or folder in it, we type mkdir and then type the name of new folder
+here we will type mkdir LocalRepo
+a we see a new folder called LocalRepo that got created in the GITDEMO 
+
+now to get inside the LocalRepo, e type cd LocalRepo
+now, this LocalRepo is not a gitrepo, becase if we type ls -h then a .git file will not be shown
+so, to make it a gitrepo, we type git init and then press enter
+now the LocalRepo has become a gitrepo
+
+now in github, we will need to create new repo that will store LocalRepo
+so, after creating new repo in github, here, in the terminal, we will write git remote add origin
+and then we will paste the https link of the repo and press enter
+now to verify the remote, we type git remote -v
+to check the branch, we type git branch 
+it will show master branch as it is the default branch
+to rename a branch, we write git branch -M main
+here main is the nwe name of the branch
+then if we type git branch, it will now show main instead of master
+
+we can write git push -u origin main
+here -u is used to set upstream
+it menas, if we ar working on the same project for a long time, then from next time we can just write git push
