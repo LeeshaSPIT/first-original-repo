@@ -128,3 +128,25 @@ then we can type git diff and see if there are any unresolved conflict
 now we can type git checkout main
 and then type git merge feature1
 and finally we can type git push
+
+we can type git log and press enter to see all the commits that we made
+to exit that we type q and press enter
+
+for undoing the changes:
+there are three cases:
+
+case1 : staged changes
+        we type git reset <-file name-> and then press enter
+        then we type git reset and then press enter
+
+case2: committed changes (for one commit):
+            git reset HEAD~1
+
+case3: committed changes (for many commits):
+            git reset <-commit hash->
+            git reset --hard <-commit hash->
+
+        here hash is the code of the commit
+        we can see the hash when we type git log. the code in yellow is the hash code
+        when we write --hard, then the changes will also be visible in the vs code as well
+        as first after typing the first line, we did changes in the github
