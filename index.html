@@ -115,3 +115,16 @@ so we type git pull origin main and press enter
 now all the changes will be visible 
 
 okay so lets start with merge conflict now
+it is an event that take place when git is unable to automatically resolve differences in code btw two commits
+it means if we add two things that means 
+in main, we wrote <p>This is a new feature(button)</p>
+in feature1, we wrote <p>This is a new feature(dropdown)</p>
+so now there will be conflict on what we need to add as both lines have diff text
+now lets type git merge main and press enter
+now it will show some green and blue lines
+now we can choose which to keep or we can choose to keep both the features
+and then we can add and commit
+then we can type git diff and see if there are any unresolved conflict
+now we can type git checkout main
+and then type git merge feature1
+and finally we can type git push
